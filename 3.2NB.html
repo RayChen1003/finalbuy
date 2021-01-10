@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Centipede Select</title>
+	<link rel="stylesheet" href="assets/PRODUCT.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+	</script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap"
+		rel="stylesheet">
+	<link href="pic/CS1.1.png">
+</head>
+
+<body>
+	<!-- Members Sidebars -->
+	<div id="mySidenav" class="rsidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="rig.html"><i class="fa fa-pencil-square-o"></i> 註冊帳號</a>
+		<a href="login.html" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+			<i class="fa fa-id-card-o"></i> 登入 </a>
+		<a href="memberf.html"><i class="fa fa-address-book-o"></i> 會員資料</a>
+	</div>
+	<!-- NAVIGATIONtop -->
+	<div class="navtop">
+		<img src="pic/CS1.1.png" width="100px" height="100px">
+		<img src="pic/CS2.PNG" width="500px" height="100px">
+		<div class="src-container">
+			<form action="/action_page.php">
+				<input type="text" placeholder="搜尋..." name="src">
+				<button type="submit"><i class="fa fa-search"></i></button>
+			</form>
+		</div>
+		<a href="#" onclick="openNav()"><i class="fa fa-user"></i> 會員中心</a>
+		<a href="shoppingcart.html"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i> 購物車</a>
+	</div>
+	<!-- NAVIGATION1 -->
+	<div class="nav1">
+		<a href="index.html">首頁</a>
+		<a href="1all.html">商品總覽</a>
+		<a href="2NIKE.html">Nike</a>
+		<a class="active" href="3NEWBALANCE.html">New Balance</a>
+		<a href="4CONVERSE.html">Converse</a>
+		<a href="5VANS.html">Vans</a>
+		<a href="6BRANDS.html">各品牌故事</a>
+		<a href="7ABOUT US.html">關於我們</a>
+	</div>
+	<!--nike商品-->
+	<section id="hot">
+		<div class="row">
+			<div class="col-xl">
+				<img src="pic/shoes/NB2.jpg">
+			</div>
+			<div class="col-xl">
+				<p>New Balance / NEW BALANCE 992</p>
+				<h1> NEW BALANCE 992 </h1>
+				<h1><i class="fa fa-usd" aria-hidden="true"></i>8,500元</h1>
+				<select>
+					<option>US6</option>
+					<option>US7</option>
+					<option>US8</option>
+					<option>US9</option>
+					<option>US10</option>
+					<option>US11</option>
+				</select>
+				<input type="number" value="1">
+				<input id="sub1" type="submit" value="加入購物車">
+				<h1>產品介紹</h1>
+				<h5>992鞋面採用了麂皮與透氣網布，中底則使用了ENCAP以及 ABZORB彈性科技，提供了絕佳的避震以及穩定，高品質與高質感的鞋履，細節控的你，是該入手了。 </h5>
+				<!--評分-->
+				<div class="star">
+					<input type="radio" id="star6" name="star" value="6" hidden>
+					<label for="star6"></label>
+					<input type="radio" id="star5" name="star" value="5" hidden>
+					<label for="star5"></label>
+					<input type="radio" id="star4" name="star" value="4" hidden>
+					<label for="star4"></label>
+					<input type="radio" id="star3" name="star" value="3" hidden>
+					<label for="star3"></label>
+					<input type="radio" id="star2" name="star" value="2" hidden>
+					<label for="star2"></label>
+					<input type="radio" id="star1" name="star" value="1" hidden>
+					<label for="star1"></label>
+				</div>
+				<h2>評論區</h2>
+				<textarea name="memo" cols="50" rows="4.5" wrap="hard"> </textarea> <input id="sub2" type="submit" value="送出評論">
+			</div>
+		</div>
+	</section>
+	<section class="container">
+
+		<h2>留言版 :</h2>
+		<div class="row">
+			<h3>abc122222 : 物美價廉的好鞋! </h3>
+			<hr>
+			<h3>absad12sadl2 : 好貴! </h3>
+		</div>
+	</section>
+	<!-- Footer -->
+	<footer>
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h3 style="text-align: left;">瀏覽人數:</h3>
+						<p>Centipede Select總是給您最好的球鞋選擇
+							<br>立即加入會員吧 </p>
+						<br>
+						<div class="sss">
+							<a href="rig.html">註冊會員</a>
+						</div>
+					</div>
+					<div class="col-sm footer-contact">
+						<h2>聯絡資訊</h2>
+						<p><i class="fa fa-map-marker"></i>桃園市中壢區協同街101號</p>
+						<p><i class="fa fa-phone"></i>0908888888</p>
+						<p><i class="fa fa-envelope"></i>Email<a href="mailto:CentipedeSelect@gamil.com">
+								:CentipedeSelect@gamil.com</a>
+						</p>
+						<p><i class="fa fa-instagram"></i>CentipedeSelect666</p>
+						<p><i class="fa fa-cc-paypal"></i><i class="fa fa-cc-amex"></i><i class="fa fa-cc-discover"></i><i
+								class="fa fa-cc-jcb"></i><i class="fa fa-cc-visa"></i><i class="fa fa-cc-diners-club"></i></p>
+					</div>
+					<div class="col-2">
+						<h3>回到頂部</h3>
+						<p>
+							<a href="#top"></i> <img class="logo-footer" src="pic/CS2.PNG">
+								<img class="logo-footer" src="pic/CS1.1.png"></a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<footer class="bang">Copyright@2020 Ray</footer>
+	<script>
+		//side bar
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "400px";
+		}
+
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+		}
+	</script>
+
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Centipede Select</title>
+	<link rel="stylesheet" href="assets/default.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+	</script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap"
+		rel="stylesheet">
+	<link href="pic/CS1.1.png">
+	<link rel="stylesheet" href="assets/brands.css">
+</head>
+
+<body>
+	<!-- Members Sidebars -->
+	<div id="mySidenav" class="rsidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="rig.html"><i class="fa fa-pencil-square-o"></i> 註冊帳號</a>
+		<a href="login.html" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+			<i class="fa fa-id-card-o"></i> 登入 </a>
+		<a href="memberf.html"><i class="fa fa-address-book-o"></i> 會員資料</a>
+	</div>
+	<!-- NAVIGATIONtop -->
+	<div class="navtop">
+		<img src="pic/CS1.1.png" width="100px" height="100px">
+		<img src="pic/CS2.PNG" width="500px" height="100px">
+		<div class="src-container">
+			<form action="/action_page.php">
+				<input type="text" placeholder="搜尋..." name="src">
+				<button type="submit"><i class="fa fa-search"></i></button>
+			</form>
+		</div>
+		<a href="#" onclick="openNav()"><i class="fa fa-user"></i> 會員中心</a>
+		<a href="shoppingcart.html"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i> 購物車</a>
+	</div>
+	<!-- NAVIGATION1 -->
+	<div class="nav1">
+		<a href="index.html">首頁</a>
+		<a href="1all.html">商品總覽</a>
+		<a href="2NIKE.html">Nike</a>
+		<a href="3NEWBALANCE.html">New Balance</a>
+		<a href="4CONVERSE.html">Converse</a>
+		<a href="5VANS.html">Vans</a>
+		<a class="active" href="6BRANDS.html">各品牌故事</a>
+		<a href="7ABOUT US.html">關於我們</a>
+	</div>
+	<!--brands-->
+	<div class="card-container">
+		<div class="card-inner">
+			<div class="card-imgouter">
+				<img class="card-img" src="pic/logo/Nike.png" />
+			</div>
+			<div class="card-content">
+				借助籃球運動建立品牌形象，是Nike長期以來不變的法則，
+				以喬丹為代表的美國黑人運動員將Nike內涵推向了一個極至：卓越、力量和不可戰勝的頂峰，
+				籃球已經成為Nike品牌的象徵，並失去原本“球”的意義。
+				隨著美國NBA在全球的風行和影響，Nike已經被註釋為美國文化的象徵，它被社會轉化為一個國家的文化符號。
+			</div>
+		</div>
+	</div>
+	<div class="card-container">
+		<div class="card-inner">
+			<div class="card-imgouter">
+				<img class="card-img" src="pic/logo/NewBalance.png" />
+			</div>
+			<div class="card-content">
+				New Balance秉持著社會道德責任、把成為高科技、高品質之世界運動與休閒用品領導者做為品牌使命，
+				這個當初默默為雙足健康製造鞋墊的小鞋廠，在這個快速變遷的全球化時代，
+				將不斷挑戰自我，找到屬於自己的新平衡。
+			</div>
+		</div>
+	</div>
+	<div class="card-container">
+		<div class="card-inner">
+			<div class="card-imgouter">
+				<img class="card-img" src="pic/logo/Converse.png" />
+			</div>
+			<div class="card-content">
+				Converse是所有休閒鞋中世界頂級運動品牌之一。
+				Converse是由其創辦人摩爾·匡威根據自己的姓氏匡威命名的。
+				其品牌核心理念為激發大家的創造力。 1917年正式推出了ALL STAR帆布鞋，
+				以其狂放不羈的設計，風靡全球一炮而紅。
+			</div>
+		</div>
+	</div>
+	<div class="card-container">
+		<div class="card-inner">
+			<div class="card-imgouter">
+				<img class="card-img" src="pic/logo/vans.png" />
+			</div>
+			<div class="card-content">
+				Vans（範斯）是1966年誕生于美國南加州的原創極限運動潮牌。
+				以極限運動起家，包括滑板、衝浪、BMX、滑雪等。 並以滑板運動為根，
+				從生活方式、藝術、音樂和街頭時尚文化等注入Vans美學，
+				形成別具個性的青年文化標誌，成為年輕極限運動愛好者和潮流人士認同歡迎的世界性品牌！
+				Vans這個品牌。
+			</div>
+		</div>
+	</div>
+	<!-- Footer -->
+	<footer>
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h3 style="text-align: left;">瀏覽人數:</h3>
+						<p>Centipede Select總是給您最好的球鞋選擇
+							<br>立即加入會員吧 </p>
+						<br>
+						<div class="sss">
+							<a href="rig.html">註冊會員</a>
+						</div>
+					</div>
+					<div class="col-sm footer-contact">
+						<h2>聯絡資訊</h2>
+						<p><i class="fa fa-map-marker"></i>桃園市中壢區協同街101號</p>
+						<p><i class="fa fa-phone"></i>0908888888</p>
+						<p><i class="fa fa-envelope"></i>Email<a href="mailto:CentipedeSelect@gamil.com">
+								:CentipedeSelect@gamil.com</a>
+						</p>
+						<p><i class="fa fa-instagram"></i>CentipedeSelect666</p>
+						<p><i class="fa fa-cc-paypal"></i><i class="fa fa-cc-amex"></i><i class="fa fa-cc-discover"></i><i
+								class="fa fa-cc-jcb"></i><i class="fa fa-cc-visa"></i><i class="fa fa-cc-diners-club"></i></p>
+					</div>
+					<div class="col-2">
+						<h3>回到頂部</h3>
+						<p>
+							<a href="#top"></i> <img class="logo-footer" src="pic/CS2.PNG">
+								<img class="logo-footer" src="pic/CS1.1.png"></a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<footer class="bang">Copyright@2020 Ray</footer>
+	<script>
+		//side bar
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "400px";
+		}
+
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+		}
+	</script>
+
+</body>
+
+</html>
